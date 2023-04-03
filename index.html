@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMAPEN IDE</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body id="body">
+    <nav>
+   <h1><i class="fa-solid fa-code"></i> MMAPEN <i class="fa-solid fa-code"></i></h1> 
+
+   <div class="nav-btn">
+<i class="fa-solid fa-moon" id="toggle"></i>
+<button id="save-button">save</button></div>
+    </nav>
+
+<div class="container">
+<div class="left-content">
+
+<div>
+<label> <i class="fa-brands fa-html5"></i> HTML</label>
+<textarea  id="htmlcode" onkeyup="run()"></textarea>
+
+</div>
+<div>
+    <label> <i class="fa-brands fa-css3-alt"></i>CSS</label>
+    <textarea id="csscode" onkeyup="run()"></textarea>
+</div>
+
+<div>
+    <label> <i class="fa-brands fa-js"></i>JAVASCRIPT</label>
+    <textarea id="jscode" onkeyup="run()"></textarea>
+</div>
+
+</div>
+
+
+<div class="right-content">
+    <label><i class="fa-solid fa-play"></i>Output</label>
+    <iframe id="code-output"></iframe>
+</div>
+  </div> 
+  <script src="style.js"></script> 
+</body>
+</html>
+
+
+
+

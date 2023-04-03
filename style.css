@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    height: 100vh;
+     background-color: black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+    background-color: #3d3a3a;
+}
+
+.nav-btn{
+ display: flex;  
+ align-items: center; 
+ gap: 1.5rem;
+}
+
+.nav-btn button{
+border: 1px solid yellow;
+padding: 0.3rem 2rem;
+cursor: pointer;
+}
+#toggle{
+  background-color: white; 
+border: 1px solid yellow;
+color: #1f1f1f;
+padding: 0.2rem 0.8rem;
+transition: all 2s;
+cursor: pointer;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+display: grid;
+grid-template-rows: repeat(2, 1fr);
+gap: 2rem;
+}
+
+label{
+    background-color:#3d3a3a;
+    color:yellow;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 20px;
+
+}
+label i{
+    margin: 0 0.3rem;
+}
+.left-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+textarea{
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    padding: 3px;
+    background-color: #1f1f1f;
+    color: white;
+    resize: none;
+}
+iframe{
+width: 100%;
+height: 98%;
+color: white;
+ background-color: #1f1f1f;
+outline: none;
+border: 0;
+}
+@media screen and (max-width:600px) {
+.left-content {
+row-gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
