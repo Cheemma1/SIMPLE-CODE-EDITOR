@@ -83,7 +83,7 @@ else{
 output.style.color="white";
 
 area.forEach(textarea =>{
-textarea.style.background='#11f1f1f';
+textarea.style.background='#1f1f1f';
 textarea.style.transition="2s";
 textarea.style.color="white";
 });
